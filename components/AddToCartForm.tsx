@@ -5,6 +5,7 @@ import type { Product } from '@prisma/client';
 import { useCart, type CartItem } from '@/lib/cart';
 import { useRouter } from 'next/navigation';
 import { ShoppingCart, FileEdit } from 'lucide-react';
+import { v4 as uuidv4 } from 'uuid';
 
 export function AddToCartForm({ product }: { product: Product }) {
     const router = useRouter();
@@ -22,7 +23,7 @@ export function AddToCartForm({ product }: { product: Product }) {
 
     const handleAdd = (redirect: boolean) => {
         const item: CartItem = {
-            uniqueId: crypto.randomUUID(),
+            uniqueId: uuidv4(),
             productId: product.id,
             productName: product.name,
             designCode: product.designCode,
