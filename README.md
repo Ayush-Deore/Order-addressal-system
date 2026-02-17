@@ -1,6 +1,13 @@
- # Door Catalog B2B Portal
+ # Door Sales B2C Portal
 
-A private B2B door catalog and quoting system built with Next.js 14+, Tailwind CSS, Prisma, and NextAuth.
+A private B2C door catalog and quoting system built with Next.js 14+, Tailwind CSS, Prisma, and NextAuth.
+Closing client with traditional ordering systems can be tacky, hectic and time-consuming, which is why, i came up with an integrated
+sales solution, where door manufacturers will have an online catalog display where they can also take quotation requests that get
+saved to the admin dashboard, where they can generate a professional email based quoatation amd send it to the buyer, and also download
+a csv/excel file that holds the entire quotation/client requirement data, to ease the invoicing and book-keeping process and save time.
+
+remember, in sales, it's always,
+time saved -> more time on new prospects -> more deals closed -> HIGHER REVENUE.
 
 ## Features
 
