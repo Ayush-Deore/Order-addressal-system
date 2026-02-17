@@ -12,7 +12,6 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center bg-stone-950 text-white">
       <div className="text-center">
         <h1 className="text-6xl font-light tracking-widest uppercase">Luxe Doors</h1>
-        <p className="mt-6 text-xl text-stone-400 font-light">Architectural Entrances for B2B Partners</p>
 
         <div className="mt-12">
           <Link
@@ -25,7 +24,7 @@ export default async function Home() {
         </div>
       </div>
       <footer className="absolute bottom-8 text-xs text-stone-600">
-        © 2024 Door Manufacturing Co. Private Access Only.
+       Private Access Only.
       </footer>
     </main>
   );
