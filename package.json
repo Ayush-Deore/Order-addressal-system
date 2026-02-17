@@ -2,12 +2,6 @@
   "name": "door-catalog",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",
     "@prisma/adapter-neon": "^5.22.0",
@@ -46,5 +40,12 @@
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   }
 }
